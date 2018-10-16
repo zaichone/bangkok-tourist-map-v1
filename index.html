@@ -55,6 +55,18 @@
     </header>
 
     <main role="main">
+      <div class="wrap-map">
+    <div id='map'></div>
+          <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaWNoYmluZmVucmlzIiwiYSI6ImNqbWxzZnMwbjBib2kza2pwc3hrZGRvMXoifQ.SZpbFTULSHw765lXglZpLw';
+const map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/ichbinfenris/cjnb3szfm0iwg2rqrz843p2r0',
+center: [2.317600, 48.866500],
+zoom: 12.0
+});
+</script>
+</div>
 
       <section class="jumbotron text-center">
         <div class="container">
@@ -227,18 +239,7 @@
         <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
       </div>
     </footer>
-    <div class="wrap-map">
-    <div id='map'></div>
-          <script>
-mapboxgl.accessToken = 'pk.eyJ1IjoiaWNoYmluZmVucmlzIiwiYSI6ImNqbWxzZnMwbjBib2kza2pwc3hrZGRvMXoifQ.SZpbFTULSHw765lXglZpLw';
-var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/ichbinfenris/cjn4apa0d211z2rleq722mbxm',
-center: [100.538706, 13.762895],
-zoom: 15
-});
-</script>
-</div>
+    
     
 
     <!-- Bootstrap core JavaScript
